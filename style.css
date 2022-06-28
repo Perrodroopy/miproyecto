@@ -1,0 +1,144 @@
+/* texto */
+html {font-family: 'Joan', serif;
+}
+/* index */
+
+/* background */
+body{
+    background-color: white;
+    background-image: url(./img/background.png);
+}
+
+/* logo */
+header{
+    display: flex;
+    text-align: center;
+    background-color: white;
+    
+
+}
+/* menu */
+header ul li{
+    float: right;
+    align-items: flex-start;
+    list-style: none;
+    margin: 10px;
+    color: black;
+    background-color: white;
+    
+}
+
+/* sub menu */
+section{
+
+  background-color: black;
+}
+ section div img{
+    background-size: cover;
+    float: center; 
+    width: 400px;
+    height:600px;
+    padding: 30px;
+    
+    
+}
+
+section p{
+    color:white;
+    float:right;
+    width: 400px;
+    height:600px;
+}
+
+/* pie */
+footer{
+  background-color: #9c9c9c;
+  display: flex;
+}
+
+footer div{
+    padding:10px;
+    margin:auto;
+    list-style:none;
+    float:left;
+}
+
+
+/* registro */
+
+form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+
+  }
+  form input {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+  }
+  form button {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+  }
+  label {
+    text-align: right;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (min-width: 400px) {
+    form {
+      overflow: hidden;
+    }
+  
+    label {
+      float: left;
+      width: 200px;
+    }
+  
+    input {
+      float: left;
+      width: calc(100% - 200px);
+    }
+  
+    button {
+      float: right;
+      width: calc(100% - 200px);
+    }
+  }
+
+/* libros */
+
+/* contactos */
+
+article{
+  background-color: black;
+}
+
+article div h1{
+ color:white;
+}
+
+article p{
+    color:white;
+    text-align: justify;
+    
+  
+}
+
+/* autora */
+
+/* grind */
