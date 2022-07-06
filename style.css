@@ -1,7 +1,9 @@
-/* texto */
-html {font-family: 'Joan', serif;
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
 }
-/* index */
 
 /* background */
 body{
@@ -9,136 +11,127 @@ body{
     background-image: url(./img/background.png);
 }
 
-/* logo */
-header{
-    display: flex;
-    text-align: center;
-    background-color: white;
-    
+/* NAVBAR ----------------------------- */
 
-}
-/* menu */
-header ul li{
-    float: right;
-    align-items: flex-start;
-    list-style: none;
-    margin: 10px;
-    color: black;
-    background-color: white;
-    
+.navBar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0;
 }
 
-/* sub menu */
-section{
+.navBar ul{
+  display: flex;
+ 
+}
 
+.navBar ul li{
+  list-style: none;
+}
+
+.navBar ul li a{
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  font-family: "Joan", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  color: black;
+}
+
+.navBar ul li a:hover{
+  background-color: #96313a;
+  border-radius: 10px;
+  color: white;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
   background-color: black;
 }
- section div img{
-    background-size: cover;
-    float: center; 
-    width: 400px;
-    height:600px;
-    padding: 30px;
-    
-    
+
+.card h1{
+  color: white;
+  
 }
 
-section p{
-    color:white;
-    float:right;
-    width: 400px;
-    height:600px;
+.card p{
+  color: white;
+  
 }
 
-/* pie */
+
+
+
 footer{
-  background-color: #9c9c9c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  background-color: grey;
+}
+
+footer ol{
   display: flex;
 }
 
-footer div{
-    padding:10px;
-    margin:auto;
-    list-style:none;
-    float:left;
+footer ol li{
+  list-style: none;
+  margin: 10px;
 }
 
+footer img{
+  width: 50px;
+}
 
-/* registro */
+footer .copy{
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-form {
-    padding: 1em;
-    background: #f9f9f9;
-    border: 1px solid #c1c1c1;
-    margin-top: 2rem;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-
-  }
-  form input {
-    margin-bottom: 1rem;
-    background: #fff;
-    border: 1px solid #9c9c9c;
-  }
-  form button {
-    background: lightgrey;
-    padding: 0.7em;
-    border: 0;
-  }
-  label {
-    text-align: right;
-    display: block;
-    padding: 0.5em 1.5em 0.5em 0;
-  }
-  
-  input {
-    width: 100%;
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-  }
-
-  @media (min-width: 400px) {
-    form {
-      overflow: hidden;
-    }
-  
-    label {
-      float: left;
-      width: 200px;
-    }
-  
-    input {
-      float: left;
-      width: calc(100% - 200px);
-    }
-  
-    button {
-      float: right;
-      width: calc(100% - 200px);
-    }
-  }
-
-/* libros */
-
-/* contactos */
-
-article{
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   background-color: black;
-}
-
-article div h1{
- color:white;
-}
-
-article p{
-    color:white;
-    text-align: justify;
-    
+  }
   
+  .div1 { grid-area: 1 / 1 / 3 / 3; }
+  .div2 { grid-area: 1 / 3 / 2 / 5; }
+  .div3 { grid-area: 2 / 3 / 3 / 5; }
+
+.div1 img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  object-position: top;
 }
 
-/* autora */
+.div2{
+  display: flex;
+  align-items: center;
+  
 
-/* grind */
+}
+
+.div2 h1 {
+  font-size: 100px;
+  margin-left: 50px;
+  color: white;
+}
+
+.div3{
+  margin-right: 30px;
+  display: flex;
+}
+
+.div3 p{
+  margin-left: 50px;
+  font-size: 24px;
+  color: white;
+}
+
